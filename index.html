@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Personal Blog of Kwan Wai-Pang">
+  <meta name="keywords" content="SLAM, Event Camera, Robotics">
+
+  <!-- 确保您已经设置了视口的meta标签用于自适应屏幕大小的 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--   <title>Kwan Wai-Pang's PhD Thesis</title> -->
+  <title>HKU-ArcLab | Mono-EIO</title>
+  <meta name="author" content="Kwan Wai-Pang " />
+
+  <!-- OpenGraph 用于更新页面-->
+  <meta property="og:site_name" content="Kwan Wai-Pang's PhD Thesis" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kwan Wai-Pang | PhD Thesis" />
+  <meta property="og:description" content="Welcome to Mono-EIO 😊" />
+  <meta property="og:image" content="https://kwanwaipang.github.io/Poster_files/hku_logo.jpg" />
+
+  <meta property="og:locale" content="en" />
+
+  <meta name="google-site-verification" content="Jtxa1xy6N3_2RjVVFrZgXjPZ0AHklxJXQ1eQ6QXNWr8" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1QX9D95NS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-R1QX9D95NS');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="https://kwanwaipang.github.io/Poster_files/hku_logo.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          
+          <a class="navbar-item" href="https://kwanwaipang.github.io/Mono-EIO">
+            Mono-EIO
+          </a>
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/PL-EVIO">
+            PL-EVIO
+          </a>
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/ESVIO">
+            ESVIO
+          </a>
+
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/EVI-SAM">
+            EVI-SAM
+          </a>
+
+          <a class="navbar-item" href="https://kwanwaipang.github.io/DEIO">
+            DEIO
+          </a>
+
+          <a class="navbar-item" href="https://arclab-hku.github.io/SuperEIO">
+            SuperEIO
+          </a>
+
+          <a class="navbar-item" target="_blank" href="https://arclab-hku.github.io/ecmd/">
+            ECMD Dataset
+          </a>
+
+          <a class="navbar-item" target="_blank" href="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM">
+            HKU Dataset
+          </a>
+
+          <!-- <a class="navbar-item" target="_blank" href="https://kwanwaipang.github.io/File/Representative_works/Representative_works.html">
+            Representative Works
+          </a> -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Monocular Event Visual Inertial Odometry based on Event-corner using Sliding Windows Graph-based Optimization</h1>
+
+          <!-- 作者 -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://kwanwaipang.github.io/" target="_blank">Weipeng Guan</a><sup>1</sup>,
+            </span>
+
+            <span class="author-block">
+              <a href="https://arclab.hku.hk/PengLu.html" target="_blank">Peng Lu</a><sup>1</sup>
+            </span>
+            
+          </div>
+          
+          <!-- 单位 -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong</span>
+          </div>
+
+          <!-- 各种link -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/abstract/document/9981970"
+                   target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://kwanwaipang.github.io/Poster_files/papers/Monocular Event Visual Inertial Odometry Based on Event-Corner Using Sliding Windows Graph-Based Optimization.pdf"
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=HNmjcVzp8Aw&t=1s"
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/KwanWaiPang/Mono-EIO"
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM?tab=readme-ov-file#Dataset-for-monocular-evio"
+                    target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 参考代码：https://github.com/nerfies/nerfies.github.io/blob/main/index.html -->
+<!-- 对应网页效果：https://nerfies.github.io/ -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <!-- 首页图 -->
+        <img src="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/raw/main/IROS2022/cover.jpg"
+        class="interpolation-image"
+        alt="Interpolation end reference image."/>
+
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Event cameras are biologically-inspired vision sensors that capture pixel-level illumination changes instead of the intensity image at a fixed frame rate. 
+          They offer many advantages over the standard cameras, such as high dynamic range, high temporal resolution (low latency), no motion blur, etc. 
+          Therefore, developing state estimation algorithms based on event cameras offers exciting opportunities for autonomous systems and robots. 
+          In this paper, we propose monocular visual-inertial odometry for event cameras based on event-corner feature detection and matching with well-designed feature management. 
+          More specifically, two different kinds of event representations based on time surface are designed to realize event-corner feature tracking (for front-end incremental estimation) and matching (for loop closure detection). 
+          Furthermore, the proposed event representations are used to set mask for detecting the event-corner feature based on the raw event-stream, which ensures the uniformly distributed and spatial consistency characteristic of the event-corner feature. Finally, a tightly coupled, graph-based optimization framework is designed to obtain high-accurate state estimation through fusing pre-integrated IMU measurements and event-corner observations. We validate quantitatively the performance of our system on different resolution event cameras: DAVIS240C (240*180, public dataset, achieve state-of-the-art), DAVIS346 (346*240, real-test), DVXplorer (640*480 real-test). 
+          Furthermore, we demonstrate qualitatively the accuracy, robustness, loop closure, and re-localization performance of our framework on different large-scale datasets, and an autonomous quadrotor flight using our Event Visual-inertial Odometry (EVIO) framework. 
+          Videos of all the evaluations are presented on the project website.
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Demo</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/HNmjcVzp8Aw?si=tqAlFnmkfeZG8r_v"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        
+        <br>
+        <h2 class="title is-3">IROS2022 Presentation</h2>
+
+        <div class="publication-video">
+
+           <!-- 加载中的动图 -->
+          <img id="loadingImage1" src="./static/img/loading-icon.gif" alt="Loading..." 
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+
+          <!-- iframe 用于嵌入 Bilibili 视频 -->
+          <iframe id="videoIframe1" src="//player.bilibili.com/player.html?isOutside=true&aid=304377944&bvid=BV18P411A7jW&cid=870595493&p=1&autoplay=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 动画交互部分 -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Event-Corner Feature Detction</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            We do not rely on the use of image-based corner detection but design a asynchronously detected and uniformly distributed event-corner detector from events-only data.
+            To enforce the uniform distribution, a minimum distance (10-20 pixels for different resolution event camera) is set between two neighboring event-corner features. 
+            Meanwhile, we maintain the event-corners, where the pixel value of the TS with polarity is not equal to 128.0, to emphasize the detected event-corner features located in the strong edges rather than the too many noisy features in low texture areas. 
+          </p>
+        </div>
+
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/img/62de83c7d7e39.gif"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Raw Event Stream</p>
+          </div>
+
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                id="interpolation-slider"
+                data-start-index="0"
+                data-max-frames="15"
+                step="1" min="0" max="100" value="0" type="range">
+          </div>
+
+          <div class="column is-3 has-text-centered">
+            <img src="./static/img/62de84082ed7d.gif"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">TS with Polarity</p>
+          </div>
+
+        </div>
+        <br/>
+        <!--/ Interpolating. -->
+
+        <br>
+        <div>
+        <h2 class="title is-3">Event-Corner Feature Tracking and Matching</h2>
+        <img src="./static/img/微信截图_20241015091300.png"
+                 class="tracking-matching"
+                 alt="tracking-matching."/>
+                 <h2 class="subtitle has-text-centered">
+                  (a) The raw event stream (left), the Time Surface with polarity (middle), and the normalized Time Surface without polarity (right); 
+                  (b) Event-corner tracking on Time Surface with polarity; 
+                  (c) Loop detection using the event-corner features and the normalized Time Surface without polarity.
+                </h2>
+        </div>
+
+        <br>
+        <div>
+        <h2 class="title is-3">Framework Overview</h2>
+        <img src="./latex/image/evio_framework_new.png"
+                 class="framework-image"
+                 alt="framework image."/>
+            <h2 class="subtitle has-text-centered">
+              The framework overview of our Mono-EIO.
+            </h2>
+        </div>
+        
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+    <!-- 更多demo展示 -->
+    <div class="columns is-centered">
+
+      <div class="column">
+        <!-- <div class="content"> -->
+          <h2 class="title is-3">Evaluation On davis240c</h2>
+          <!-- 加载中的动图 -->
+          <img id="loadingImage2" src="./static/img/loading-icon.gif" alt="Loading..." 
+           style="position: absolute; width: auto; height: auto; object-fit: cover; border-radius: 15px;">
+
+          <!-- iframe 用于嵌入 Bilibili 视频 -->
+          <iframe id="videoIframe2"  src="//player.bilibili.com/player.html?isOutside=true&aid=425093250&bvid=BV1k3411p7Kx&cid=556772123&p=1&autoplay=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- </div> -->
+      </div>
+
+
+      <div class="column">
+        <!-- <div class="content"> -->
+          <h2 class="title is-3">Evaluation On DAVIS346</h2>
+          <!-- 加载中的动图 -->
+          <img id="loadingImage3" src="./static/img/loading-icon.gif" alt="Loading..." 
+           style="position: absolute; width: auto; height: auto; object-fit: cover; border-radius: 15px;">
+
+          <!-- iframe 用于嵌入 Bilibili 视频 -->
+          <iframe id="videoIframe3" src="//player.bilibili.com/player.html?isOutside=true&aid=636884564&bvid=BV1Hb4y1x7ex&cid=519033169&p=1&autoplay=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- </div> -->
+      </div>
+    
+    </div>
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <!-- <div class="content"> -->
+          <h2 class="title is-3">Evaluation On Dvxplorer</h2>
+          <!-- 加载中的动图 -->
+          <img id="loadingImage4" src="./static/img/loading-icon.gif" alt="Loading..." 
+           style="position: absolute; width: auto; height: auto; object-fit: cover; border-radius: 15px;">
+
+          <!-- iframe 用于嵌入 Bilibili 视频 -->
+          <iframe id="videoIframe4" src="//player.bilibili.com/player.html?isOutside=true&aid=851914563&bvid=BV13L4y137Rw&cid=519058385&p=1&autoplay=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- </div> -->
+      </div>
+
+      <div class="column">
+        <!-- <div class="content"> -->
+          <h2 class="title is-3">Outdoor Evaluation</h2>
+          <!-- 加载中的动图 -->
+          <img id="loadingImage5" src="./static/img/loading-icon.gif" alt="Loading..." 
+           style="position: absolute; width: auto; height: auto; object-fit: cover; border-radius: 15px;">
+
+          <!-- iframe 用于嵌入 Bilibili 视频 -->
+          <iframe id="videoIframe5" src="//player.bilibili.com/player.html?isOutside=true&aid=339382173&bvid=BV14R4y157vg&cid=519034693&p=1&autoplay=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- </div> -->
+      </div>
+    
+    </div>
+
+
+  </div>
+</section>
+
+<!-- 引用格式 -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @inproceedings{GWPHKU:Mono-EIO,
+        title={Monocular Event Visual Inertial Odometry based on Event-corner using Sliding Windows Graph-based Optimization},
+        author={Guan, Weipeng and Lu, Peng},
+        booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+        pages={2438-2445},
+        year={2022},
+        organization={IEEE}
+      }
+    </code></pre>
+  </div>
+</section>
+
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <br>
+            This website template is from <a
+            href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+            We sincerely thank the author for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+
+  // 当 iframe 加载完成后执行
+  document.getElementById('videoIframe1').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage1').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe1').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe2').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage2').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe2').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe3').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage3').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe3').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe4').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage4').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe4').style.display = 'block';
+  };
+
+  document.getElementById('videoIframe5').onload = function() {
+      // 隐藏加载中的动图
+      document.getElementById('loadingImage5').style.display = 'none';
+      // 显示 iframe
+      document.getElementById('videoIframe5').style.display = 'block';
+  };
+
+
+</script>
+
+</body>
+</html>
